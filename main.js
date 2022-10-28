@@ -20,7 +20,9 @@ resp.type('text/html')
 //set the status code
 resp.status(200)
 //send the response
-resp.send(`<h1> The NEW CURRENT time is ${new Date()}<h1>`)
+resp.send(`<h1> The NEW CURRENT time is ${new Date()}<h1> 
+<br> <h2> this is another line<h2>`)
+
 
 })
 
