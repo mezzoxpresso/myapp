@@ -20,11 +20,14 @@ resp.type('text/html')
 //set the status code
 resp.status(200)
 //send the response
-resp.send(`<h1> The NEW CURRENT time is ${new Date()}<h1> 
-<br> <h2> this is another line<h2>`)
+resp.send(`<h1> The NEW CURRENT time is ${new Date()}</h1> 
+<br> <h2> this is another line</h2><br><img src ="/assets/download.png">`)
 
 
 })
+//serve static resource
+app.use("/assets", express.static(__dirname+"/static"))
+
 
 //start our web application.. after the server has started successfully, run this application
 app.listen(port,() => {
